@@ -1,5 +1,6 @@
 import { inject, injectable } from "tsyringe";
-import { IUsersRepository } from "../../repositories/";
+import { IUsersRepository } from "../../repositories/IUsersRepository";
+
 
 
 interface IRequest {
@@ -16,7 +17,6 @@ class AuthenticateUserUseCase {
 
 
     async execute({ email, password }: IRequest) {
-        const user = await this.usersRepository.findbyEmail(email);
 
 
         if(!user){
