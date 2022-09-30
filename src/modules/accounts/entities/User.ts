@@ -11,7 +11,7 @@ class User {
     @Column()
     name: string;
 
-    
+
     @Column()
     email: string;
 
@@ -20,6 +20,9 @@ class User {
 
     @Column()
     driver_license: string;
+
+    @Column()
+    avatar: string;
 
     @Column()
     isAdmin: boolean;
