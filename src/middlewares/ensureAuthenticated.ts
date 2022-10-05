@@ -36,4 +36,3 @@ export async function ensureAuthenticated(request: Request, response: Response, 
         throw new AppError("Invalid token", 401);
     }
 }
-
